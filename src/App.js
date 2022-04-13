@@ -9,7 +9,7 @@ function App() {
   return (
     <BrowserRouter>
       <Navbar title="Title" hasBackButton />
-      <div id="app">
+      <div id="app" className="content">
         <Routes>
           <Route path="/" element={<BreedsPage />} />
           <Route path="/details" element={<DetailsPage />} />

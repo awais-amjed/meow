@@ -1,23 +1,24 @@
 @import "../variables";
 
-$header-height: 60px;
-
 header {
   position: fixed;
   inset: 0;
-  height: $header-height;
+  height: $navbar-height;
   z-index: 10;
   box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.2);
-  color: $basic-text-color;
 
   nav {
-    padding: 0 $padding-inline-mobile;
-    height: $header-height;
+    padding: 0 $padding-inline;
+    height: $navbar-height;
     display: flex;
     justify-content: space-between;
     align-items: center;
 
     a {
+      color: $basic-text-color;
+    }
+
+    .icon {
       color: $basic-text-color;
     }
 

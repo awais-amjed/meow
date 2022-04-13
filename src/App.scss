@@ -1,3 +1,9 @@
+@import "variables";
+
 #app {
-  text-align: center;
+  color: $basic-text-color;
+}
+
+.content {
+  padding: $navbar-height 0 0;
 }

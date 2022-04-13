@@ -1,0 +1,19 @@
+#breeds-page {
+  .headline {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    height: 20vh;
+    padding: 15px;
+
+    img {
+      width: 50vw;
+      object-fit: contain;
+    }
+
+    p {
+      width: 50vw;
+      text-align: center;
+    }
+  }
+}
