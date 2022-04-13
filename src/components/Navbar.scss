@@ -1,0 +1,30 @@
+$header-height: 40px;
+
+header {
+  position: fixed;
+  inset: 0;
+  height: $header-height;
+  z-index: 10;
+  box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.2);
+  color: white;
+
+  nav {
+    padding: 0 30px;
+    height: $header-height;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    a {
+      color: white;
+    }
+
+    .icon:hover {
+      cursor: pointer;
+    }
+
+    .navbar-title {
+      color: lightgrey;
+    }
+  }
+}
