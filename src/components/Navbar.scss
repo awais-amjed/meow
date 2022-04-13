@@ -1,4 +1,6 @@
-$header-height: 40px;
+@import "../variables";
+
+$header-height: 60px;
 
 header {
   position: fixed;
@@ -6,17 +8,17 @@ header {
   height: $header-height;
   z-index: 10;
   box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.2);
-  color: white;
+  color: $basic-text-color;
 
   nav {
-    padding: 0 30px;
+    padding: 0 $padding-inline-mobile;
     height: $header-height;
     display: flex;
     justify-content: space-between;
     align-items: center;
 
     a {
-      color: white;
+      color: $basic-text-color;
     }
 
     .icon:hover {
@@ -24,7 +26,8 @@ header {
     }
 
     .navbar-title {
-      color: lightgrey;
+      color: #d3d3d3;
+      font-size: 1.4rem;
     }
   }
 }

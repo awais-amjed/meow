@@ -13,14 +13,11 @@ const Navbar = ({
     <nav>
       {hasBackButton ? (
         <NavLink to="/">
-          <ArrowBackIosNewRoundedIcon
-            className="icon"
-            fontSize="small"
-          />
+          <ArrowBackIosNewRoundedIcon className="icon" />
         </NavLink>
       ) : <img src={pawPrint} alt="paw print" height="20" />}
-      <p className="navbar-title">{title}</p>
-      <Settings className="icon" fontSize="small" />
+      <h2 className="navbar-title">{title}</h2>
+      <Settings className="icon" />
     </nav>
   </header>
 );
