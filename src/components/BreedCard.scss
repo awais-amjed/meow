@@ -1,9 +1,21 @@
 .breed-card {
+  position: relative;
   padding: 0 5px 0 0;
   height: 210px;
   display: flex;
   flex-direction: column;
   gap: 10px;
+
+  .background {
+    display: none;
+    position: absolute;
+    height: 150px;
+    right: 0;
+    bottom: 0;
+    border-top-left-radius: 200px;
+    background-color: rgba(0, 0, 0, 0.05);
+    width: 150px;
+  }
 
   .image-part {
     display: flex;
@@ -36,10 +48,26 @@
   }
 }
 
-.breed-card:nth-child(3n) {
-  background-color: #446ab1;
+.breed-card:nth-child(4n) {
+  .background {
+    display: block;
+  }
+
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
-.breed-card:nth-child(3n+1) {
-  background-color: #3e61a4;
+.breed-card:nth-child(4n+1) {
+  .background {
+    display: block;
+  }
+
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.breed-card:nth-child(4n+2) {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.breed-card:nth-child(4n+3) {
+  background-color: rgba(0, 0, 0, 0.3);
 }

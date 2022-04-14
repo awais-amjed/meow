@@ -9,6 +9,7 @@ const BreedCard = ({
   origin,
 }) => (
   <Col className="breed-card">
+    <div className="background" />
     <div className="image-part">
       <img src={imageURL} alt="breed" />
       <ArrowCircleRightOutlined />
