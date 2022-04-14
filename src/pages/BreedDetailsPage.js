@@ -6,6 +6,7 @@ import ReactLoading from 'react-loading';
 import Navbar from '../components/Navbar';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { fetchCarousel, resetCarousel } from '../redux/carousel/carousel';
+import './BreedDetailsPage.scss';
 
 const BreedDetailsPage = () => {
   const { state } = useLocation();
@@ -19,13 +20,15 @@ const BreedDetailsPage = () => {
   }, []);
 
   return (
-    <div id="details-page">
+    <div id="breed-details-page">
       <Navbar title={breed.name} hasBackButton />
-      {carousel && carousel.length > 0 ? (
-        <Carousel showArrows autoPlay swipeable axis="horizontal" showThumbs={false} showStatus={false} dynamicHeight={false} infiniteLoop>
-          {carousel.map((image) => <img key={image} src={image} alt="" />)}
-        </Carousel>
-      ) : <ReactLoading type="spinningBubbles" className="loading-indicator" />}
+      <div className="headline">
+        {carousel && carousel.length > 0 ? (
+          <Carousel showArrows autoPlay swipeable axis="horizontal" showThumbs={false} showStatus={false} dynamicHeight={false} infiniteLoop>
+            {carousel.map((image) => <img key={image} src={image} alt="" />)}
+          </Carousel>
+        ) : <ReactLoading type="spinningBubbles" />}
+      </div>
     </div>
   );
 };

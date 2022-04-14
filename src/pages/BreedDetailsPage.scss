@@ -1,0 +1,13 @@
+#breed-details-page {
+  .headline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+
+    img {
+      height: 200px;
+      object-fit: cover;
+    }
+  }
+}
