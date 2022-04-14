@@ -1,10 +1,11 @@
 import './BreedsPage.scss';
 import { Container, Row } from 'react-bootstrap';
-import { useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import ReactLoading from 'react-loading';
 import { fetchBreeds } from '../redux/breeds/breeds';
 import BreedCard from '../components/BreedCard';
+import Navbar from '../components/Navbar';
 
 const BreedsPage = () => {
   const dispatch = useDispatch();
@@ -16,6 +17,7 @@ const BreedsPage = () => {
 
   return (
     <div id="breeds-page">
+      <Navbar title="Title" />
       <div className="headline">
         <img src="https://media.giphy.com/media/yxtJv5bqYHUbwTA7Gx/giphy.gif" alt="cat gif" />
         <p>&quot;Here shall be displayed a meow fact&quot;</p>
