@@ -1,10 +1,10 @@
-import './Characteristic.scss';
+import './CharacteristicCard.scss';
 import { Col } from 'react-bootstrap';
 import PropTypes from 'prop-types';
 import { ArrowCircleRightOutlined } from '@mui/icons-material';
 import { Fade } from 'react-awesome-reveal';
 
-const Characteristic = ({
+const CharacteristicCard = ({
   characteristic,
   value,
   isURL,
@@ -23,14 +23,14 @@ const Characteristic = ({
   </Fade>
 );
 
-Characteristic.propTypes = {
+CharacteristicCard.propTypes = {
   characteristic: PropTypes.string.isRequired,
   value: PropTypes.string.isRequired,
   isURL: PropTypes.bool,
 };
 
-Characteristic.defaultProps = {
+CharacteristicCard.defaultProps = {
   isURL: false,
 };
 
-export default Characteristic;
+export default CharacteristicCard;
