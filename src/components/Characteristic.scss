@@ -1,0 +1,27 @@
+.characteristic {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+
+  h2 {
+    width: 50%;
+    font-size: 1.3rem;
+    font-weight: 900;
+    margin: 0;
+  }
+
+  p,
+  a {
+    text-decoration: none;
+    color: white;
+    text-align: end;
+    width: 50%;
+    font-size: 1.3rem;
+    margin: 0;
+  }
+}
+
+.characteristic:nth-child(2n) {
+  background-color: rgba(0, 0, 0, 0.2);
+}
