@@ -6,14 +6,10 @@ const CAROUSEL_FETCHED = 'CAROUSEL_FETCHED';
 const fetchBreeds = () => async (dispatch) => {
   const breeds = await TheCatApi.getAllBreeds();
 
-  if (breeds) {
-    dispatch({
-      type: BREEDS_FETCHED,
-      breeds,
-    });
-  } else {
-    // TODO Handle Error
-  }
+  dispatch({
+    type: BREEDS_FETCHED,
+    breeds,
+  });
 };
 
 const fetchCarousel = ({ id }) => async (dispatch) => {

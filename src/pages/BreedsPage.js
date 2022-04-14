@@ -31,7 +31,8 @@ const BreedsPage = () => {
         </div>
       </div>
       <h1 className="divider">LIST OF CAT BREEDS</h1>
-      {!breeds.length ? <ReactLoading type="spinningBubbles" className="loading-indicator" /> : (
+      {/* eslint-disable-next-line no-nested-ternary */}
+      {breeds ? !breeds.length ? <ReactLoading type="spinningBubbles" className="loading-indicator" /> : (
         <Container fluid>
           <Row xs={2}>
             {breeds.map(({
@@ -49,7 +50,7 @@ const BreedsPage = () => {
             ))}
           </Row>
         </Container>
-      )}
+      ) : <p className="loading-indicator">We are unable to get breeds fow now :(</p>}
     </div>
   );
 };
