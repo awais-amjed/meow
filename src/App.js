@@ -2,7 +2,7 @@ import React from 'react';
 import './App.scss';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import BreedsPage from './pages/BreedsPage';
-import DetailsPage from './pages/DetailsPage';
+import BreedDetailsPage from './pages/BreedDetailsPage';
 
 function App() {
   return (
@@ -10,7 +10,7 @@ function App() {
       <div id="app" className="content">
         <Routes>
           <Route path="/" element={<BreedsPage />} />
-          <Route path="/details" element={<DetailsPage />} />
+          <Route path="/details" element={<BreedDetailsPage />} />
           <Route path="*" element={<BreedsPage />} />
         </Routes>
       </div>

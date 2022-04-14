@@ -28,9 +28,15 @@ const BreedsPage = () => {
         <img src="https://media.giphy.com/media/yxtJv5bqYHUbwTA7Gx/giphy.gif" alt="cat gif" />
         <div>
           <p className="meow-fact">Meow Fact</p>
-          <p>
-            {fact === '' ? <ReactLoading type="cubes" /> : fact ?? 'We failed to get a fact for meow :('}
-          </p>
+          {/* eslint-disable-next-line no-nested-ternary */}
+          {fact === '' ? <ReactLoading type="cubes" /> : fact ? (
+            <p>
+              &quot;
+              {fact}
+              &quot;
+            </p>
+          )
+            : <p>We failed to get a fact for meow :(</p>}
         </div>
       </div>
       <h1 className="divider">LIST OF CAT BREEDS</h1>
