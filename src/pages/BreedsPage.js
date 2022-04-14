@@ -13,11 +13,11 @@ const BreedsPage = () => {
 
   useEffect(() => {
     if (!breeds.length) dispatch(fetchBreeds());
-  }, [fetchBreeds]);
+  }, []);
 
   return (
     <div id="breeds-page">
-      <Navbar title="Title" />
+      <Navbar title="Meow" />
       <div className="headline">
         <img src="https://media.giphy.com/media/yxtJv5bqYHUbwTA7Gx/giphy.gif" alt="cat gif" />
         <p>&quot;Here shall be displayed a meow fact&quot;</p>
