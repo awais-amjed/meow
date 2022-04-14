@@ -27,6 +27,12 @@
         font-size: 1.2rem;
       }
 
+      .zoom {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
       p {
         font-size: 0.9rem;
         text-align: center;

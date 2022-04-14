@@ -2,22 +2,25 @@ import './Characteristic.scss';
 import { Col } from 'react-bootstrap';
 import PropTypes from 'prop-types';
 import { ArrowCircleRightOutlined } from '@mui/icons-material';
+import { Fade } from 'react-awesome-reveal';
 
 const Characteristic = ({
   characteristic,
   value,
   isURL,
 }) => (
-  <Col className="characteristic">
-    <h2>{characteristic}</h2>
-    {isURL
-      ? (
-        <a href={value} target="_blank" rel="noreferrer">
-          <ArrowCircleRightOutlined />
-        </a>
-      )
-      : <p>{value}</p>}
-  </Col>
+  <Fade>
+    <Col className="characteristic">
+      <h2>{characteristic}</h2>
+      {isURL
+        ? (
+          <a href={value} target="_blank" rel="noreferrer">
+            <ArrowCircleRightOutlined />
+          </a>
+        )
+        : <p>{value}</p>}
+    </Col>
+  </Fade>
 );
 
 Characteristic.propTypes = {

@@ -2,6 +2,7 @@ import { Col } from 'react-bootstrap';
 import './BreedCard.scss';
 import { ArrowCircleRightOutlined } from '@mui/icons-material';
 import PropTypes from 'prop-types';
+import { Zoom } from 'react-awesome-reveal';
 
 const BreedCard = ({
   imageURL,
@@ -11,10 +12,12 @@ const BreedCard = ({
 }) => (
   <Col className="breed-card" onClick={onClick}>
     <div className="background" />
-    <div className="image-part">
-      <img src={imageURL} alt="breed" />
-      <ArrowCircleRightOutlined />
-    </div>
+    <Zoom>
+      <div className="image-part">
+        <img src={imageURL} alt="breed" />
+        <ArrowCircleRightOutlined />
+      </div>
+    </Zoom>
     <div className="text-part">
       <h3>{name}</h3>
       <p>{origin}</p>

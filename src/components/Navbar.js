@@ -3,6 +3,7 @@ import ArrowBackIosNewRoundedIcon from '@mui/icons-material/ArrowBackIosNewRound
 import { Settings } from '@mui/icons-material';
 import PropTypes from 'prop-types';
 import { NavLink } from 'react-router-dom';
+import { Slide } from 'react-awesome-reveal';
 import pawPrint from '../images/pawprint.png';
 
 const Navbar = ({
@@ -10,15 +11,17 @@ const Navbar = ({
   hasBackButton,
 }) => (
   <header>
-    <nav>
-      {hasBackButton ? (
-        <NavLink to="/">
-          <ArrowBackIosNewRoundedIcon className="icon" />
-        </NavLink>
-      ) : <img src={pawPrint} alt="paw print" height="20" />}
-      <h2 className="navbar-title">{title}</h2>
-      <Settings className="icon" />
-    </nav>
+    <Slide direction="down">
+      <nav>
+        {hasBackButton ? (
+          <NavLink to="/">
+            <ArrowBackIosNewRoundedIcon className="icon" />
+          </NavLink>
+        ) : <img src={pawPrint} alt="paw print" height="20" />}
+        <h2 className="navbar-title">{title}</h2>
+        <Settings className="icon" />
+      </nav>
+    </Slide>
   </header>
 );
 
