@@ -7,8 +7,9 @@ const BreedCard = ({
   imageURL,
   name,
   origin,
+  onClick,
 }) => (
-  <Col className="breed-card">
+  <Col className="breed-card" onClick={onClick}>
     <div className="background" />
     <div className="image-part">
       <img src={imageURL} alt="breed" />
@@ -25,6 +26,7 @@ BreedCard.propTypes = {
   imageURL: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   origin: PropTypes.string.isRequired,
+  onClick: PropTypes.func.isRequired,
 };
 
 export default BreedCard;
