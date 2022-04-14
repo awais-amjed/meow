@@ -29,6 +29,7 @@ const BreedDetailsPage = () => {
           </Carousel>
         ) : <ReactLoading type="spinningBubbles" />}
       </div>
+      <h1 className="divider">DETAILED CHARACTERISTICS</h1>
     </div>
   );
 };

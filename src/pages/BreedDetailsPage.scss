@@ -1,3 +1,5 @@
+@import "../constants";
+
 #breed-details-page {
   .headline {
     display: flex;
@@ -9,5 +11,9 @@
       height: 200px;
       object-fit: cover;
     }
+  }
+
+  .divider {
+    @include divider;
   }
 }
