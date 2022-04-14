@@ -30,7 +30,7 @@ const fetchCarousel = ({ id }) => async (dispatch) => {
   }
 };
 
-const breeds = (state = [], actions) => {
+const breedsReducer = (state = [], actions) => {
   switch (actions.type) {
     case BREEDS_FETCHED:
       return actions.breeds;
@@ -50,7 +50,7 @@ const breeds = (state = [], actions) => {
 };
 
 export {
-  breeds as default,
+  breedsReducer as default,
   fetchBreeds,
   fetchCarousel,
 };

@@ -7,7 +7,7 @@ $headline-height: 200px;
     display: flex;
     align-items: center;
     gap: 15px;
-    height: $headline-height;
+    min-height: $headline-height;
     padding: 15px;
     background-color: #5888e6;
 
@@ -17,9 +17,22 @@ $headline-height: 200px;
       object-fit: contain;
     }
 
-    p {
+    div {
       width: 50vw;
-      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .meow-fact {
+        text-decoration: underline;
+        font-weight: 900;
+        font-size: 1.2rem;
+      }
+
+      p {
+        font-size: 0.9rem;
+        text-align: center;
+      }
     }
   }
 

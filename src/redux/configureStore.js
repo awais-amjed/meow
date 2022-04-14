@@ -1,7 +1,13 @@
-import { applyMiddleware, createStore } from 'redux';
+import { applyMiddleware, combineReducers, createStore } from 'redux';
 import thunk from 'redux-thunk';
-import breeds from './breeds/breeds';
+import factReducer from './fact/fact';
+import breedsReducer from './breeds/breedsReducer';
 
-const store = createStore(breeds, applyMiddleware(thunk));
+const rootReducer = combineReducers({
+  breeds: breedsReducer,
+  fact: factReducer,
+});
+
+const store = createStore(rootReducer, applyMiddleware(thunk));
 
 export default store;
