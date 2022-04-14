@@ -1,4 +1,4 @@
-@import "../variables";
+@import "../constants";
 
 header {
   position: fixed;
@@ -8,6 +8,7 @@ header {
   box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.2);
 
   nav {
+    background-color: $background-color;
     padding: 0 $padding-inline;
     height: $navbar-height;
     display: flex;

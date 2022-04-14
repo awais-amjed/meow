@@ -7,3 +7,11 @@ $background-color: #4369b2;
 $padding-inline: 15px;
 $basic-text-color: white;
 $navbar-height: 60px;
+
+@mixin divider {
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 10px $padding-inline;
+  font-weight: 700;
+  font-size: 1rem;
+}

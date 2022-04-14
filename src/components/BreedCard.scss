@@ -1,0 +1,45 @@
+.breed-card {
+  padding: 0 5px 0 0;
+  height: 210px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  .image-part {
+    display: flex;
+    justify-content: space-between;
+
+    img {
+      height: 130px;
+      width: 85%;
+      object-fit: cover;
+    }
+  }
+
+  .text-part {
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+    margin-right: 10px;
+    align-self: end;
+
+    h3 {
+      font-size: 1.3rem;
+      font-weight: 900;
+      margin: 0;
+    }
+
+    p {
+      font-size: 0.8rem;
+      margin: 0;
+    }
+  }
+}
+
+.breed-card:nth-child(3n) {
+  background-color: #446ab1;
+}
+
+.breed-card:nth-child(3n+1) {
+  background-color: #3e61a4;
+}

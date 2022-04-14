@@ -1,12 +1,18 @@
+@import "../constants";
+
+$headline-height: 200px;
+
 #breeds-page {
   .headline {
     display: flex;
     align-items: center;
     gap: 15px;
-    height: 20vh;
+    height: $headline-height;
     padding: 15px;
+    background-color: #5888e6;
 
     img {
+      height: $headline-height;
       width: 50vw;
       object-fit: contain;
     }
@@ -15,5 +21,13 @@
       width: 50vw;
       text-align: center;
     }
+  }
+
+  .loading-indicator {
+    margin: 100px auto;
+  }
+
+  .divider {
+    @include divider;
   }
 }
