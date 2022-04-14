@@ -6,4 +6,6 @@
 
 .content {
   padding: $navbar-height 0 0;
+  max-width: $max-width;
+  margin: 0 auto;
 }

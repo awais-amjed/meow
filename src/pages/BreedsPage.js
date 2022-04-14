@@ -43,7 +43,7 @@ const BreedsPage = () => {
       {/* eslint-disable-next-line no-nested-ternary */}
       {breeds ? !breeds.length ? <ReactLoading type="spinningBubbles" className="loading-indicator" /> : (
         <Container fluid>
-          <Row xs={2}>
+          <Row xs={2} md={3} lg={4} xxl={6}>
             {breeds.map((breed) => (
               <BreedCard
                 key={breed.id}

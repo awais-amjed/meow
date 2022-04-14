@@ -5,15 +5,17 @@ header {
   inset: 0;
   height: $navbar-height;
   z-index: 10;
+  background-color: $background-color;
   box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.2);
 
   nav {
-    background-color: $background-color;
     padding: 0 $padding-inline;
     height: $navbar-height;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    max-width: $max-width;
+    margin: 0 auto;
 
     h2 {
       margin: 0;
