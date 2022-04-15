@@ -1,44 +1,70 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+![](https://img.shields.io/badge/Microverse-blueviolet)
 
-## Available Scripts
+# Meow
+
+> Get information about different Cat Breeds
+
+<p style="display: flex; align-items: start; gap: 10px">
+  <img src="app_screenshot_1.png" width="50%" />
+  <img src="app_screenshot_2.png" width="50%" />
+</p>
+
+Get to know about different Cat Breeds and the characteristics of every breed with images of cats and a random fact about cats. Created in ReactJS.
+
+## Built With
+
+- ReactJS
+- SCSS
+
+## Live Demo
+
+- Check it out on [Netlify](https://awais-amjed-meow.netlify.app/)
+
+## Getting Started
+
+To get a local copy up and running follow these simple example steps.
+
+### Prerequisites
+
+A Web Browser (preferably Google Chrome)
+
+### Setup
+
+- Clone the GitHub Repository
+- Go to the Project Directory
+- Run ```npm install```
+
+### Usage
 
 In the project directory, you can run:
 
-### `npm start`
+```npm start```
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Runs the app in the development mode.<br>
+Open http://localhost:3000 to view it in your browser.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## Authors
 
-### `npm test`
+👤 **Author 1**
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- GitHub: [Awais Amjed](https://github.com/awais-amjed)
+- Website: [Coding Fries](https://codingfries.com)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/awais-amjed)
 
-### `npm run build`
+## 🤝 Contributing
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Contributions, issues, and feature requests are welcome!
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+Feel free to check the [issues page](../../issues/).
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Show your support
 
-### `npm run eject`
+Give a ⭐️ if you like this project!
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Acknowledgments
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Microverse
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## 📝 License
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+This project is [MIT](./LICENSE) licensed.
