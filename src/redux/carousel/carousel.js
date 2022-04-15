@@ -31,4 +31,6 @@ export {
   carouselReducer as default,
   fetchCarousel,
   resetCarousel,
+  CAROUSEL_FETCHED,
+  RESET_CAROUSEL,
 };
