@@ -5,8 +5,8 @@
 > Get information about different Cat Breeds
 
 <p style="display: flex; align-items: start; gap: 10px">
-  <img src="app_screenshot_1.png" width="50%" />
-  <img src="app_screenshot_2.png" width="50%" />
+  <img src="app_screenshot_1.png" width="25%" />
+  <img src="app_screenshot_2.png" width="25%" />
 </p>
 
 Get to know about different Cat Breeds and the characteristics of every breed with images of cats and a random fact about cats. Created in ReactJS.
