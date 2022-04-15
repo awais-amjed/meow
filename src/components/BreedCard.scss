@@ -1,0 +1,74 @@
+.breed-card {
+  cursor: pointer;
+  position: relative;
+  padding: 0 5px 0 0;
+  height: 210px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  .background {
+    display: none;
+    position: absolute;
+    height: 150px;
+    right: 0;
+    bottom: 0;
+    border-top-left-radius: 200px;
+    background-color: rgba(0, 0, 0, 0.05);
+    width: 150px;
+  }
+
+  .image-part {
+    display: flex;
+    justify-content: space-between;
+
+    img {
+      height: 130px;
+      width: 85%;
+      object-fit: cover;
+    }
+  }
+
+  .text-part {
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+    margin-right: 10px;
+    align-self: end;
+
+    h3 {
+      font-size: 1.3rem;
+      font-weight: 900;
+      margin: 0;
+    }
+
+    p {
+      font-size: 0.8rem;
+      margin: 0;
+    }
+  }
+}
+
+.breed-card:nth-child(4n) {
+  .background {
+    display: block;
+  }
+
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.breed-card:nth-child(4n+1) {
+  .background {
+    display: block;
+  }
+
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.breed-card:nth-child(4n+2) {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.breed-card:nth-child(4n+3) {
+  background-color: rgba(0, 0, 0, 0.3);
+}

@@ -1,0 +1,50 @@
+@import "../constants";
+
+#breed-details-page {
+  .headline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: $headline-height;
+    max-height: 500px;
+
+    img {
+      height: 230px;
+      object-fit: cover;
+    }
+  }
+
+  .divider {
+    @include divider;
+  }
+}
+
+@media (min-width: 700px) {
+  #breed-details-page .headline img {
+    height: 270px;
+  }
+}
+
+@media (min-width: 900px) {
+  #breed-details-page .headline img {
+    height: 320px;
+  }
+}
+
+@media (min-width: 1024px) {
+  #breed-details-page .headline img {
+    height: 350px;
+  }
+}
+
+@media (min-width: 1200px) {
+  #breed-details-page .headline img {
+    height: 400px;
+  }
+}
+
+@media (min-width: 1400px) {
+  #breed-details-page .headline img {
+    height: 500px;
+  }
+}
